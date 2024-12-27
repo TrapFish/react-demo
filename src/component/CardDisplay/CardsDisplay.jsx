@@ -4,8 +4,6 @@ import Card from './Card';
 function CardsDisplay(){
     return (
         <>
-          Card Display
-
           <h1>Available Experts</h1>
       <Card name="Kumar Gourav">
         <p>
