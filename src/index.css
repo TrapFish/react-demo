@@ -234,3 +234,7 @@ img {
   background-color: #2f1d43;
   padding: 50px;
 }
+
+button.active{
+  background-color: #7cffc3;
+}

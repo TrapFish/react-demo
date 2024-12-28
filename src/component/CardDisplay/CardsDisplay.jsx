@@ -40,7 +40,7 @@ function CardsDisplay() {
         <menu> 
             {LISTDISPLAY.map((value, index) => {
               return (
-                <Button key={value} value={value} selectOption={()=>handleSelectOption(value)} />
+                <Button key={value} isSelected={reactValue === value} value={value} selectOption={()=>handleSelectOption(value)} />
               )
             })}
             <div>
