@@ -196,6 +196,7 @@ body {
 .display-details{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 
 .card-data{
@@ -221,4 +222,15 @@ img {
   min-width: 200px;
   height: 200px;
   width: 200px;
+}
+
+.button-style{
+  background-color: #7c83ff;
+}
+
+.section-build{
+  min-height: 100%;
+  min-width: 50%;
+  background-color: #2f1d43;
+  padding: 50px;
 }
