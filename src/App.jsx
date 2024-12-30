@@ -1,9 +1,13 @@
 import CardsDisplay from "./component/CardDisplay/CardsDisplay";
 import DataRepresent from './component/DataRepresentation/DataRepresent';
+import CreateTime from './component/CreateTimer/CreateTimer';
 
 function App() {
   return (
     <div>
+      <main>
+        <CreateTime />
+      </main>
       <header>
         <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
         <h1>React Essentials</h1>
@@ -17,12 +21,12 @@ function App() {
       </main>
       <div className="display-details">
         <div>
-           <CardsDisplay />
+          <CardsDisplay />
         </div>
         <div>
-           <DataRepresent />
+          <DataRepresent />
         </div>
-        
+
       </div>
 
     </div>
