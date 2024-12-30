@@ -10,7 +10,6 @@ function CardsDisplay() {
     setReactValue(optionClicked);
   }
 
-  console.log("Line 13::", EXAMPLES )
   return (
     <>
       <div>
@@ -61,18 +60,6 @@ function CardsDisplay() {
                   
                 </>
               )}
-              {/* {EXAMPLES.map((exampleMap, index)=>{
-                return (
-                 <>
-                   {exampleMap[reactValue] && (
-                    <>
-                       <h1>{exampleMap[reactValue].title}</h1>
-                       <p>{exampleMap[reactValue].description}</p>
-                    </>
-                   )}
-                 </>
-                )
-              })} */}
             </div>
           </menu>
         </section>
