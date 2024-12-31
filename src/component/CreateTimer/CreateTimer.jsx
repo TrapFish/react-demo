@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import TimerButton from '../../modules/TimerButton/TimerButton';
-import {BUTTON_TIMER} from "./TimerData";
+// import {BUTTON_TIMER} from "./TimerData";
 
 export default function CreateTime ({} ){
    const [timeCount, setTimeCount]  = useState({hour: 0, minutes: 0, sec: 0})
@@ -39,16 +39,14 @@ export default function CreateTime ({} ){
       <div>
         <h3>TimerApp is going to created</h3>
         {timeCount.hour} : {timeCount.minutes} : {timeCount.sec}
-        
-               {BUTTON_TIMER.map((buttonTime, index) => {
-                   return (
-                       <TimerButton key={buttonTime.value} buttonDisplay={
-                           <>
-                               <button onClick={buttonTime.event}>{buttonTime.value}</button>
-                           </>
-                       } />
-                   )
-               })}
+
+        <TimerButton buttonDisplay={
+          <>
+           <button onClick={handleStart}>Start</button>
+           <button onClick={handlePause}>Pause</button>
+           <button onClick={handleRest}>Reset</button>
+          </>
+        }/>
       </div>
     </>
    )
